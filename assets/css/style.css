@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 header {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(50, 50, 50);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom-left-radius: 1rem;
@@ -34,11 +34,11 @@ header {
     position: fixed;
     width: 3rem;
     height: 3rem;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(36, 36, 36);
     border-radius: 1.5rem;
     color: black;
     right: 5%;
-    bottom: 10%;
+    bottom: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,13 +62,13 @@ header {
     justify-content: center;
 }
 .block {
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(36, 36, 36);
     height: 100vh;
     width: 50%;
     margin: 0%;
 }
 .dark {
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(24, 24, 24);
 }
 .inside {
     height: 84vh;
@@ -80,6 +80,14 @@ header {
 .inblock {
     height: auto;
     max-width: 100%;
+}
+#title {
+    padding-left: 0.5rem;
+}
+p {
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 #inline_logo {
     float: right;
@@ -101,19 +109,19 @@ header {
 }
 .side {
     height: 100vh;
-    width: 6rem;
+    width: 3rem;
 }
 .left {
-    background: linear-gradient(270deg, rgb(18, 18, 18), rgba(18, 18, 18, 0));
+    background: linear-gradient(270deg, rgb(36, 36, 36), rgba(36, 36, 36, 0));
 }
 .right {
-    background: linear-gradient(90deg, rgb(18, 18, 18), rgba(18, 18, 18, 0));
+    background: linear-gradient(90deg, rgb(36, 36, 36), rgba(36, 36, 36, 0));
 }
 .left_dark {
-    background: linear-gradient(270deg, rgb(10, 10, 10), rgba(10, 10, 10, 0));
+    background: linear-gradient(270deg, rgb(24, 24, 24), rgba(24, 24, 24, 0));
 }
 .right_dark {
-    background: linear-gradient(90deg, rgb(10, 10, 10), rgba(10, 10, 10, 0));
+    background: linear-gradient(90deg, rgb(24, 24, 24), rgba(24, 24, 24, 0));
 }
 .header_link {
     transition-duration: 0.5s;
