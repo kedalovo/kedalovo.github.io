@@ -14,6 +14,12 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+.no_select {
+    user-select: none;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; */
+}
 header {
     background-color: rgb(50, 50, 50);
     padding-top: 0.5rem;
