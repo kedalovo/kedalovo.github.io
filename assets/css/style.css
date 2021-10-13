@@ -85,7 +85,8 @@ header {
     padding-left: 0.5rem;
 }
 p {
-    font-size: 0.75rem;
+    text-align: justify;
+    font-size: 0.6rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -109,7 +110,7 @@ p {
 }
 .side {
     height: 100vh;
-    width: 3rem;
+    width: 10vw;
 }
 .left {
     background: linear-gradient(270deg, rgb(36, 36, 36), rgba(36, 36, 36, 0));
