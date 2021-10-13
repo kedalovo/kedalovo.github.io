@@ -16,9 +16,9 @@ body::-webkit-scrollbar {
 }
 .no_select {
     user-select: none;
-    /* -webkit-user-select: none;
+    -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none; */
+    -ms-user-select: none;
 }
 header {
     background-color: rgb(50, 50, 50);
