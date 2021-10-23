@@ -1,19 +1,21 @@
 @import "fonts.css";
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 body {
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow-y: scroll;
+    overflow-y: auto; */
     margin: 0rem;
     color: white;
     background-color: black;
     font-family: "Roboto";
+    scroll-snap-type: y mandatory;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 .no_select {
     user-select: none;
     -webkit-user-select: none;
@@ -30,6 +32,7 @@ header {
     border: rgb(36, 36, 36);
     margin: 0rem;
     vertical-align: baseline;
+    z-index: 100;
     width: 100%;
     position: fixed;
 }
@@ -41,7 +44,7 @@ header {
     position: fixed;
     width: 3rem;
     height: 3rem;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(12, 12, 12);
     border-radius: 1.5rem;
     color: black;
     right: 5%;
@@ -67,18 +70,19 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: start;
 }
 .block {
     background-color: rgb(36, 36, 36);
     height: 100vh;
-    width: 50%;
+    width: 100vw;
     margin: 0%;
 }
 .dark {
     background-color: rgb(24, 24, 24);
 }
 .inside {
-    height: 84vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,24 +92,25 @@ header {
     height: auto;
     max-width: 100%;
 }
-#title {
-    padding-left: 0.5rem;
+h1 {
+    padding-left: 1rem;
+}
+#projects_block_title {
+    padding-left: 0rem;
 }
 p {
     text-align: justify;
-    font-size: 0.6rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #inline_logo {
     float: right;
     width: 6rem;
     height: 6rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
 }
 .progress {
-    height: 4vh;
+    height: auto;
     text-align: center;
 }
 .progress a {
@@ -169,4 +174,24 @@ p {
     line-height: 3.75rem;
     display: inline-block;
     vertical-align: middle;
+}
+#icon_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 60%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.icon {
+    height: 4rem;
+    width: 4rem;
+}
+.down_btn {
+    width: auto;
+    height: 3vh;
+    filter: invert();
 }
