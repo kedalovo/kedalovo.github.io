@@ -37,7 +37,7 @@ header {
     position: fixed;
 }
 .header_space {
-    height: 12vh;
+    height: 13.5%;
     margin: 0rem;
 }
 #button_up {
@@ -64,8 +64,8 @@ header {
     align-items: center;
 }
 .x_container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,15 +74,18 @@ header {
 }
 .block {
     background-color: rgb(36, 36, 36);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 .dark {
     background-color: rgb(24, 24, 24);
 }
 .inside {
-    height: 82vh;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,10 +93,14 @@ header {
 }
 .inblock {
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    text-align: center;
 }
 h1 {
     padding-left: 1rem;
+    margin: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 #projects_block_title {
     padding-left: 0rem;
@@ -101,6 +108,7 @@ h1 {
 p {
     text-align: justify;
     font-size: 0.8rem;
+    margin: 0%;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -110,6 +118,7 @@ p {
     height: 6rem;
 }
 .progress {
+    margin: 5%;
     height: auto;
     text-align: center;
 }
@@ -121,8 +130,8 @@ p {
     text-align: center;
 }
 .side {
-    height: 100vh;
-    width: 10vw;
+    height: 100%;
+    width: 10%;
 }
 .left {
     background: linear-gradient(270deg, rgb(36, 36, 36), rgba(36, 36, 36, 0));
