@@ -92,6 +92,9 @@ header {
     justify-content: space-between;
     flex-direction: column;
 }
+#blogs .block {
+    justify-content: flex-start;
+}
 #dark_section {
     background-color: rgb(24, 24, 24);
     justify-content: space-between;
